@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме — LLM / AI Engineer</title>
+    <title>Resume — LLM / AI Engineer</title>
     <style>
         @page {
             size: A4;
@@ -206,93 +206,93 @@
         </header>
 
         <div class="profile">
-            3 года в ML. Разрабатываю и внедряю LLM-решения в продуктовой команде из 5 AI-инженеров. Специализируюсь на дообучении моделей, RAG-пайплайнах, агентных сценариях и оптимизации инференса.
+            3 years in ML. I build and deploy LLM solutions in a product team of 5 AI engineers. I focus on model fine-tuning, RAG pipelines, agent scenarios, and inference optimization.
         </div>
 
         <div class="section">
-            <div class="section-title">Опыт работы</div>
+            <div class="section-title">Experience</div>
             <div class="job-header">
                 <span class="job-role">ML / AI Engineer</span>
-                <span class="job-date">2022 — н.в.</span>
+                <span class="job-date">2022 — Present</span>
             </div>
-            <div class="job-company">Продуктовая компания (разработка LLM-решений для автоматизации текстовых запросов)</div>
+            <div class="job-company">Product company (LLM solutions for automating text queries)</div>
             
             <div class="job-block">
-                <div class="job-title">Дообучение доменных LLM</div>
+                <div class="job-title">Fine-tuning domain-specific LLMs</div>
                 <ul class="job-list">
-                    <li>Адаптировал <span class="highlight">Qwen, Gemma, Llama</span> (3K–30K записей) под предметную область через LoRA/QLoRA. Подбирал баланс между качеством и стоимостью обучения.</li>
+                    <li>Adapted <span class="highlight">Qwen, Gemma, Llama</span> (3K–30K records) for domain-specific tasks using LoRA/QLoRA. Balanced quality against training cost.</li>
                 </ul>
                 <div class="result-line">
-                    <div class="result-label">Результат</div>
-                    Точность релевантных ответов: <span class="metric">0.62 → 0.81</span> (внутренний бенчмарк, 500 примеров). Галлюцинации на доменных запросах снизились на <span class="metric">~40%</span>.
+                    <div class="result-label">Result</div>
+                    Relevance accuracy: <span class="metric">0.62 → 0.81</span> (internal benchmark, 500 samples). Hallucinations on domain queries dropped by <span class="metric">~40%</span>.
                 </div>
             </div>
 
             <div class="job-block">
-                <div class="job-title">RAG на 10K+ документах</div>
+                <div class="job-title">RAG on 10K+ documents</div>
                 <ul class="job-list">
-                    <li>Построил пайплайн на <span class="highlight">ChromaDB</span>: гибридный retrieval (dense + sparse), реранкинг через <span class="highlight">cross-encoder (bge-reranker)</span>, фильтрация по метаданным.</li>
-                    <li>Решал ограничения контекстного окна: чанкинг с оверлапом, отбор топ-K релевантных чанков по score реранкера, приоритизация наиболее информативных фрагментов в промпт.</li>
-                    <li>Интегрировал в прод через LangChain / LlamaIndex.</li>
+                    <li>Built a pipeline on <span class="highlight">ChromaDB</span>: hybrid retrieval (dense + sparse), reranking via <span class="highlight">cross-encoder (bge-reranker)</span>, metadata filtering.</li>
+                    <li>Solved context-window limits: chunking with overlap, top-K selection by reranker score, prioritizing the most informative fragments in the prompt.</li>
+                    <li>Integrated into production via LangChain / LlamaIndex.</li>
                 </ul>
                 <div class="result-line">
-                    <div class="result-label">Результат</div>
-                    Ответы стали привязаны к источникам. Снизилась потребность в дообучении модели под каждый новый документооборот.
+                    <div class="result-label">Result</div>
+                    Answers became grounded in sources. Reduced the need to retrain the model for every new document workflow.
                 </div>
             </div>
 
             <div class="job-block">
-                <div class="job-title">Self-hosted инференс</div>
+                <div class="job-title">Self-hosted inference</div>
                 <ul class="job-list">
-                    <li>Перевёл критичные сценарии с внешних API на собственные GPU: <span class="highlight">A100, H100, RTX 3060</span>.</li>
-                    <li>Оптимизировал через <span class="highlight">vLLM, llama.cpp</span>: квантизация (GPTQ/AWQ), управление KV-cache, батчинг.</li>
+                    <li>Migrated critical scenarios from external APIs to own GPUs: <span class="highlight">A100, H100, RTX 3060</span>.</li>
+                    <li>Optimized via <span class="highlight">vLLM, llama.cpp</span>: quantization (GPTQ/AWQ), KV-cache management, batching.</li>
                 </ul>
                 <div class="result-line">
-                    <div class="result-label">Результат</div>
-                    Latency: <span class="metric">2.5с → 0.8с</span> на 70B-модели. Throughput вырос в <span class="metric">3.5×</span>. Инфраструктурные затраты сократились примерно в <span class="metric">4×</span>.
+                    <div class="result-label">Result</div>
+                    Latency: <span class="metric">2.5s → 0.8s</span> on a 70B model. Throughput increased <span class="metric">3.5×</span>. Infrastructure costs cut roughly <span class="metric">4×</span>.
                 </div>
             </div>
 
             <div class="job-block">
-                <div class="job-title">Агентные сценарии (до 3 шагов)</div>
+                <div class="job-title">Agent scenarios (up to 3 steps)</div>
                 <ul class="job-list">
-                    <li>Разработал цепочки с function calling: поиск сайта → выжимка контента → запись в файл.</li>
-                    <li>Реализовал self-correction: при ошибке инструмента агент перепланирует шаги, а не падает.</li>
+                    <li>Developed function-calling chains: find a site → extract content → write to file.</li>
+                    <li>Implemented self-correction: if a tool fails, the agent replans its steps instead of crashing.</li>
                 </ul>
                 <div class="result-line">
-                    <div class="result-label">Результат</div>
-                    Автоматизировал комплексные запросы, которые раньше требовали ручной сборки из 2–3 разных сервисов.
+                    <div class="result-label">Result</div>
+                    Automated complex queries that previously required manual assembly from 2–3 different services.
                 </div>
             </div>
 
             <div class="job-block">
-                <div class="job-title">Оценка качества и борьба с галлюцинациями</div>
+                <div class="job-title">Quality evaluation & hallucination reduction</div>
                 <ul class="job-list">
-                    <li>Собрал бенчмарк из <span class="highlight">реальных пользовательских запросов</span> (не синтетика). Проводил A/B-тесты, human-in-the-loop.</li>
-                    <li>Внедрил grounding через retrieval и верификацию ответов по цитатам из источников.</li>
+                    <li>Built a benchmark from <span class="highlight">real user queries</span> (not synthetic). Ran A/B tests, human-in-the-loop.</li>
+                    <li>Implemented grounding via retrieval and answer verification against source citations.</li>
                 </ul>
                 <div class="result-line">
-                    <div class="result-label">Результат</div>
-                    Hallucination rate в продакшене: <span class="metric">18% → 6%</span>.
+                    <div class="result-label">Result</div>
+                    Hallucination rate in production: <span class="metric">18% → 6%</span>.
                 </div>
             </div>
 
             <div class="job-block">
-                <div class="job-title">Командная работа</div>
+                <div class="job-title">Teamwork</div>
                 <ul class="job-list">
-                    <li>Проектировал архитектуру вместе с 5 AI-инженерами.</li>
-                    <li>Декомпозировал задачи, ревьюил код, синхронизировался с backend-разработчиками при внедрении ML-компонентов.</li>
+                    <li>Co-designed architecture with a team of 5 AI engineers.</li>
+                    <li>Decomposed tasks, reviewed code, and coordinated with backend developers when integrating ML components into production.</li>
                 </ul>
             </div>
         </div>
 
         <div class="section">
-            <div class="section-title">Pet-project</div>
+            <div class="section-title">Pet Project</div>
             <div class="pet-project">
-                <div class="pet-project-title">ИИ-ассистент для ПК</div>
+                <div class="pet-project-title">AI Assistant for PC</div>
                 <ul class="job-list">
-                    <li>Локальный ассистент с полным доступом к системе: веб-сёрфинг, управление ПК, голосовое управление, интерфейс через Telegram.</li>
-                    <li>Агент выполняет многошаговые сценарии (поиск информации, обработка, сохранение результатов) с возможностью управления как голосом, так и из мессенджера.</li>
+                    <li>Local assistant with full system access: web surfing, PC control, voice control, Telegram interface.</li>
+                    <li>The agent executes multi-step scenarios (search, processing, saving results) controllable by voice or messenger.</li>
                 </ul>
                 <div class="tech-stack" style="margin-top: 10px;">
                     <span class="tech-tag">Python</span>
@@ -307,22 +307,22 @@
         </div>
 
         <div class="section">
-            <div class="section-title">Образование</div>
+            <div class="section-title">Education</div>
             <div class="job-list" style="margin-bottom: 0;">
-                <li style="padding-left: 0;"><span class="highlight">The Founder</span> — Разработчик нейросетей</li>
+                <li style="padding-left: 0;"><span class="highlight">The Founder</span> — Neural Network Developer</li>
             </div>
         </div>
 
         <div class="section">
-            <div class="section-title">Языки</div>
+            <div class="section-title">Languages</div>
             <div class="lang-row">
-                <span class="highlight">Русский</span> — родной &nbsp;&nbsp;|&nbsp;&nbsp; 
-                <span class="highlight">Английский</span> — чтение документации, базовый разговорный
+                <span class="highlight">Russian</span> — native &nbsp;&nbsp;|&nbsp;&nbsp; 
+                <span class="highlight">English</span> — reading documentation, basic conversational
             </div>
         </div>
 
         <div class="section">
-            <div class="section-title">Стек</div>
+            <div class="section-title">Tech Stack</div>
             <div class="tech-stack">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">PyTorch</span>
