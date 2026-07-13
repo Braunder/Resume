@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — LLM / AI Engineer</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            color: #2c3e50;
+            line-height: 1.55;
+            padding: 40px 0;
+        }
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 45px 50px;
+        }
+        header {
+            border-bottom: 2px solid #1a252f;
+            padding-bottom: 18px;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #1a252f;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+        .contacts {
+            font-size: 13px;
+            color: #5a6c7d;
+            margin-top: 4px;
+        }
+        .contacts a {
+            color: #2c3e50;
+            text-decoration: none;
+            border-bottom: 1px solid #c0c0c0;
+        }
+        .contacts a:hover {
+            border-bottom-color: #2c3e50;
+        }
+        .profile {
+            font-size: 14px;
+            color: #3d4f5f;
+            margin-bottom: 24px;
+            padding: 12px 14px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #2c3e50;
+        }
+        .section {
+            margin-bottom: 22px;
+        }
+        .section-title {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #1a252f;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-bottom: 14px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+        .job-role {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a252f;
+        }
+        .job-date {
+            font-size: 13px;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        .job-company {
+            font-size: 13px;
+            color: #5a6c7d;
+            margin-bottom: 10px;
+        }
+        .job-block {
+            margin-bottom: 18px;
+        }
+        .job-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a252f;
+            margin-bottom: 6px;
+        }
+        .job-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .job-list li {
+            position: relative;
+            padding-left: 14px;
+            margin-bottom: 4px;
+            font-size: 13px;
+            color: #3d4f5f;
+        }
+        .job-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #95a5a6;
+        }
+        .metric {
+            display: inline-block;
+            background: #e8f0f8;
+            color: #1a252f;
+            padding: 1px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        .highlight {
+            color: #1a252f;
+            font-weight: 600;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 6px;
+        }
+        .tech-tag {
+            background: #1a252f;
+            color: #fff;
+            font-size: 11px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .result-line {
+            background: #f8f9fa;
+            border-left: 3px solid #2c3e50;
+            padding: 8px 12px;
+            margin-top: 6px;
+            font-size: 12px;
+            color: #3d4f5f;
+            border-radius: 0 4px 4px 0;
+        }
+        .result-label {
+            font-weight: 600;
+            color: #1a252f;
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            margin-bottom: 3px;
+        }
+        .pet-project {
+            background: #f8f9fa;
+            padding: 12px 14px;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+        .pet-project-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #1a252f;
+            margin-bottom: 4px;
+        }
+        .lang-row {
+            font-size: 13px;
+            color: #3d4f5f;
+        }
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                padding: 25px 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>LLM / AI Engineer</h1>
+            <div class="contacts">
+                Telegram: <a href="https://t.me/ABraunder">@ABraunder</a> &nbsp;|&nbsp; 
+                GitHub: <a href="https://github.com/Braunder">github.com/Braunder</a>
+            </div>
+        </header>
+
+        <div class="profile">
+            3 года в ML. Разрабатываю и внедряю LLM-решения в продуктовой команде из 5 AI-инженеров. Специализируюсь на дообучении моделей, RAG-пайплайнах, агентных сценариях и оптимизации инференса.
+        </div>
+
+        <div class="section">
+            <div class="section-title">Опыт работы</div>
+            <div class="job-header">
+                <span class="job-role">ML / AI Engineer</span>
+                <span class="job-date">2022 — н.в.</span>
+            </div>
+            <div class="job-company">Продуктовая компания (разработка LLM-решений для автоматизации текстовых запросов)</div>
+            
+            <div class="job-block">
+                <div class="job-title">Дообучение доменных LLM</div>
+                <ul class="job-list">
+                    <li>Адаптировал <span class="highlight">Qwen, Gemma, Llama</span> (3K–30K записей) под предметную область через LoRA/QLoRA. Подбирал баланс между качеством и стоимостью обучения.</li>
+                </ul>
+                <div class="result-line">
+                    <div class="result-label">Результат</div>
+                    Точность релевантных ответов: <span class="metric">0.62 → 0.81</span> (внутренний бенчмарк, 500 примеров). Галлюцинации на доменных запросах снизились на <span class="metric">~40%</span>.
+                </div>
+            </div>
+
+            <div class="job-block">
+                <div class="job-title">RAG на 10K+ документах</div>
+                <ul class="job-list">
+                    <li>Построил пайплайн на <span class="highlight">ChromaDB</span>: гибридный retrieval (dense + sparse), реранкинг через <span class="highlight">cross-encoder (bge-reranker)</span>, фильтрация по метаданным.</li>
+                    <li>Решал ограничения контекстного окна: чанкинг с оверлапом, отбор топ-K релевантных чанков по score реранкера, приоритизация наиболее информативных фрагментов в промпт.</li>
+                    <li>Интегрировал в прод через LangChain / LlamaIndex.</li>
+                </ul>
+                <div class="result-line">
+                    <div class="result-label">Результат</div>
+                    Ответы стали привязаны к источникам. Снизилась потребность в дообучении модели под каждый новый документооборот.
+                </div>
+            </div>
+
+            <div class="job-block">
+                <div class="job-title">Self-hosted инференс</div>
+                <ul class="job-list">
+                    <li>Перевёл критичные сценарии с внешних API на собственные GPU: <span class="highlight">A100, H100, RTX 3060</span>.</li>
+                    <li>Оптимизировал через <span class="highlight">vLLM, llama.cpp</span>: квантизация (GPTQ/AWQ), управление KV-cache, батчинг.</li>
+                </ul>
+                <div class="result-line">
+                    <div class="result-label">Результат</div>
+                    Latency: <span class="metric">2.5с → 0.8с</span> на 70B-модели. Throughput вырос в <span class="metric">3.5×</span>. Инфраструктурные затраты сократились примерно в <span class="metric">4×</span>.
+                </div>
+            </div>
+
+            <div class="job-block">
+                <div class="job-title">Агентные сценарии (до 3 шагов)</div>
+                <ul class="job-list">
+                    <li>Разработал цепочки с function calling: поиск сайта → выжимка контента → запись в файл.</li>
+                    <li>Реализовал self-correction: при ошибке инструмента агент перепланирует шаги, а не падает.</li>
+                </ul>
+                <div class="result-line">
+                    <div class="result-label">Результат</div>
+                    Автоматизировал комплексные запросы, которые раньше требовали ручной сборки из 2–3 разных сервисов.
+                </div>
+            </div>
+
+            <div class="job-block">
+                <div class="job-title">Оценка качества и борьба с галлюцинациями</div>
+                <ul class="job-list">
+                    <li>Собрал бенчмарк из <span class="highlight">реальных пользовательских запросов</span> (не синтетика). Проводил A/B-тесты, human-in-the-loop.</li>
+                    <li>Внедрил grounding через retrieval и верификацию ответов по цитатам из источников.</li>
+                </ul>
+                <div class="result-line">
+                    <div class="result-label">Результат</div>
+                    Hallucination rate в продакшене: <span class="metric">18% → 6%</span>.
+                </div>
+            </div>
+
+            <div class="job-block">
+                <div class="job-title">Командная работа</div>
+                <ul class="job-list">
+                    <li>Проектировал архитектуру вместе с 5 AI-инженерами.</li>
+                    <li>Декомпозировал задачи, ревьюил код, синхронизировался с backend-разработчиками при внедрении ML-компонентов.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Pet-project</div>
+            <div class="pet-project">
+                <div class="pet-project-title">ИИ-ассистент для ПК</div>
+                <ul class="job-list">
+                    <li>Локальный ассистент с полным доступом к системе: веб-сёрфинг, управление ПК, голосовое управление, интерфейс через Telegram.</li>
+                    <li>Агент выполняет многошаговые сценарии (поиск информации, обработка, сохранение результатов) с возможностью управления как голосом, так и из мессенджера.</li>
+                </ul>
+                <div class="tech-stack" style="margin-top: 10px;">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">llama.cpp</span>
+                    <span class="tech-tag">Whisper</span>
+                    <span class="tech-tag">Playwright</span>
+                    <span class="tech-tag">Telegram Bot API</span>
+                    <span class="tech-tag">PyAutoGUI</span>
+                    <span class="tech-tag">LangChain</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Образование</div>
+            <div class="job-list" style="margin-bottom: 0;">
+                <li style="padding-left: 0;"><span class="highlight">The Founder</span> — Разработчик нейросетей</li>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Языки</div>
+            <div class="lang-row">
+                <span class="highlight">Русский</span> — родной &nbsp;&nbsp;|&nbsp;&nbsp; 
+                <span class="highlight">Английский</span> — чтение документации, базовый разговорный
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Стек</div>
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">HuggingFace</span>
+                <span class="tech-tag">PEFT</span>
+                <span class="tech-tag">vLLM</span>
+                <span class="tech-tag">llama.cpp</span>
+                <span class="tech-tag">CUDA</span>
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">LlamaIndex</span>
+                <span class="tech-tag">BERT</span>
+                <span class="tech-tag">Sentence-Transformers</span>
+                <span class="tech-tag">ChromaDB</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">CI/CD</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
